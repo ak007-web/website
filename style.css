@@ -306,6 +306,40 @@ main {
   min-width: 259px;
 }
 
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: disc;
+  padding-left: 20px;
+  gap: 10px 30px;
+}
+
+.skills-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skills-item .title-wrapper {
+  margin-left: 5px;
+}
+
+.skills-item h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
