@@ -841,7 +841,7 @@ main {
 
 .skills-list { 
   padding: 20px;
-  
+  list-style:disc;
   min-width: min-content;
 }
 
@@ -855,7 +855,16 @@ main {
   margin-bottom: 8px;
 }
 
+.skill-list{
+  display: flex;
+  
+}
 
+.skill-contain{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
 
 .skill .title-wrapper data {
@@ -895,7 +904,7 @@ main {
 .filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -925,7 +934,7 @@ main {
 
 .filter-select.active + .select-list {
   opacity: 1;
-  visibility: visible;
+  visibility: hidden;
   pointer-events: all;
 }
 
@@ -1243,14 +1252,12 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (max-width: 510px) {
 
-  /**
-   * client
-   */
+  
 
   .clients-item { min-width: calc(33.33% - 10px); }
-
+.project-list, .blog-posts-list { grid-template-columns: 1fr  ; }
 
 
   /**
@@ -1260,9 +1267,45 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  
+
 }
 
 
+
+@media (max-width:600px){
+  .skill-contain{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+  }
+  .skills-list{
+    padding: 0%;
+    
+    margin: 0%;
+  }
+  .skills-list ul li{
+    padding-bottom: 15px;
+   
+  }
+  .skills-list ul {
+    display: flex;
+    gap:15px
+  }
+
+  .skills-item:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.project-list{
+  grid-template-columns: 1fr ;
+}
+
+}
 
 
 
@@ -1270,7 +1313,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 580px screen
  */
 
-@media (min-width: 580px) {
+@media (min-width: 780px) {
+  
+
 
   /**
    * CUSTOM PROPERTY
@@ -1634,7 +1679,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* portfolio and blog grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .blog-posts-list { grid-template-columns:1fr 1fr 1fr ; }
 
 
 
