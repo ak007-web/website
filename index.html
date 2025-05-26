@@ -496,8 +496,8 @@ engagement through enhanced visualizations presented using Power BI.
         <h3 class="h3 skills-title">My skills</h3>
         <section class="skill">
         <div class="content-card">
-          
-          <!-- Skill list section -1 -->
+          <div class="skill-contain">
+          <div class="skills-list">
           <ul >
 
             <li class="skills-item">
@@ -547,6 +547,8 @@ engagement through enhanced visualizations presented using Power BI.
               </li>
 
           </ul>
+          </div>
+          </div>
         </div>
         </section>
 
@@ -567,25 +569,11 @@ engagement through enhanced visualizations presented using Power BI.
 
          
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            
-
-          </div>
 
           <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="certifications">
+            <li class="project-item active" 
+            data-filter-item data-category="certifications">
               <a href="certificates/Financial risk.png" target="_blank">
 
                 <figure class="project-img">
@@ -835,25 +823,6 @@ engagement through enhanced visualizations presented using Power BI.
               </a>
             </li>
 
-            
-            <li class="project-item  active" data-filter-item data-category="data science">
-              <a href="https://github.com/ak007-web/Uber-Fair-Prediction">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="Uber.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Uber Fair Prediction</h3>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
              <li class="project-item  active" data-filter-item data-category="data science">
               <a href="https://github.com/ak007-web/Pollution-Analysis">
 
@@ -878,6 +847,53 @@ engagement through enhanced visualizations presented using Power BI.
 
       </article>
 
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17006059882!2d73.69815360731832!3d18.524545039483762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1723725109495!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
 
       </article>
 
